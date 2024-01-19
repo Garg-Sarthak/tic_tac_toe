@@ -117,7 +117,6 @@ mainBox.addEventListener('click',function(e){
             currSymbol = changeSymbol(currSymbol);
             symbolCount++;
             checkWin(board);
-            console.log(board);
             if (symbolCount==9 && !checkWin(board)){
                 document.querySelector("#winner").innerText = "GAME DRAW!!!";
             }
@@ -133,9 +132,7 @@ rstBtn.addEventListener("click",function(){
         box.innerText = "";
         box.style.color = "#cfd3cd";
     }
-    console.log(board);
     board = [];
-    console.log(board);
     currSymbol = startSymbolBtn.value;
     symbolCount = 0;
     document.querySelector("#winner").innerText = "";
