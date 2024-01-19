@@ -112,7 +112,6 @@ mainBox.addEventListener('click',function(e){
             rowNum = parseInt(e.target.id[0]); 
             colNum = parseInt(e.target.id[1]); 
             index = (((rowNum-1)*3) + colNum)-1;
-            console.log(rowNum,colNum,index);
             board[index] = currSymbol;
             e.target.innerText = currSymbol;
             currSymbol = changeSymbol(currSymbol);
