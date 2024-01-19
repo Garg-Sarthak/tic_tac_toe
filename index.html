@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id = "container">
+        <div><h1>Current Symbol : <span id="currSymbol"></span></h1></div>
+        <div><span><h1 id="winner"></h1></span></div>
+
+        <div id = "row1" class = "row">
+            <div id = "11" class = "box R1 C1 D1"></div>
+            <div id = "12" class = "box R1 C2"></div>
+            <div id = "13" class = "box R1 C3 D2"></div>
+        </div>
+        <div id = "row2" class = "row">
+            <div id = "21" class = "box R2 C1"></div>
+            <div id = "22" class = "box R2 C2 D1"></div>
+            <div id = "23" class = "box R2 C3"></div>
+        </div>
+        <div id = "row3" class = "row">
+            <div id = "31" class = "box R3 C1 D2"></div>
+            <div id = "32" class = "box R3 C2"></div>
+            <div id = "33" class = "box R3 C3 D1"></div>
+        </div>
+        
+        
+    </div>
+    <div id = "startContainer">
+        <div id = "startSelector">
+        Start with symbol : 
+        <select id = "starter">
+            <option selected>X</option>
+            <option>O</option>
+        </select>
+        </div>
+        <button id="reset">RESET</button>
+    </div>
+
+    <script src = "app.js"></script>
+
+</body>
+</html>
