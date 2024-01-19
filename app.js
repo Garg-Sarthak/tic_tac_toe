@@ -2,17 +2,6 @@ let board = [];
 
 
 const mainBox = document.querySelector("#container");
-// clicker.addEventListener('click',function(e){
-//     if (e.target.classList[0] == "box"){
-//         console.log(e.target.id);
-//     if (e.target.innerText == "x"){
-//         e.target.innerText = 'o';
-//     }else{
-//         e.target.innerText = 'x';
-//     }}
-//     // console.log(e.target.classList[0]);
-//     // e.stopPropagation();
-// })
 
 function changeSymbol(currSymbol){
     if (currSymbol == "X"){document.querySelector("#currSymbol").innerText ="O"; return "O"};
@@ -108,7 +97,6 @@ let currSymbol = startSymbol;
 document.querySelector("#currSymbol").innerText = currSymbol;
 
 startSymbolBtn.addEventListener('input',function(e){
-    console.log("DONE");
     currSymbol = startSymbolBtn.value;
     for (let box of document.querySelectorAll(".box")){
         box.innerHTML = "";
