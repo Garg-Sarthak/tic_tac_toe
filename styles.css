@@ -56,7 +56,7 @@ body{
 
 #startSelector{
     display: flex;
-    width : 25%;
+    width : 20%;
     justify-content: space-evenly;
 }
 
